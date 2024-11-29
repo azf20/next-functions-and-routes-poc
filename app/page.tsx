@@ -7,7 +7,7 @@ export default function Home() {
         <h1 className="text-2xl font-bold mb-6">Next.js API Function Behavior</h1>
         
         <p className="mb-4">
-          This is a proof of concept comparing function behavior across different environments:
+          This is a proof of concept mixing API functions and Next.js App routes, comparing function behavior across different environments:
         </p>
 
         <table className="w-full border-collapse mb-8">
@@ -16,7 +16,7 @@ export default function Home() {
               <th className="border p-2 text-left">Function Type</th>
               <th className="border p-2 text-left">next dev</th>
               <th className="border p-2 text-left">vercel dev</th>
-              <th className="border p-2 text-left">vercel deployed</th>
+              <th className="border p-2 text-left"><Link target="_blank" rel="noopener noreferrer" href="https://next-functions-and-routes-poc.vercel.app/" className="text-blue-500 hover:text-blue-600">vercel deployment</Link></th>
             </tr>
           </thead>
           <tbody>
@@ -51,7 +51,7 @@ export default function Home() {
               </td>
               <td className="border p-2">200</td>
               <td className="border p-2">404</td>
-              <td className="border p-2">200 if the slug is &apos;[slug]&apos;, or 405</td>
+              <td className="border p-2">200 if the slug is &apos;[slug]&apos;, or 404</td>
             </tr>
           </tbody>
         </table>
@@ -62,8 +62,11 @@ export default function Home() {
             <li><Link href="/api/time"><code className="bg-gray-100 dark:bg-gray-800 px-1 rounded">/api/time</code></Link></li>
             <li><Link href="/api/random"><code className="bg-gray-100 dark:bg-gray-800 px-1 rounded">/api/random</code></Link></li>
             <li><Link href="/api/hello/test"><code className="bg-gray-100 dark:bg-gray-800 px-1 rounded">/api/hello/test</code></Link></li>
-            <li><Link href="/api/hello/[slug]"><code className="bg-gray-100 dark:bg-gray-800 px-1 rounded">/api/hello/[slug]</code></Link></li>
           </ul>
+        </div>
+
+        <div className="mt-8 text-sm text-gray-600 dark:text-gray-400">
+          <p>View the source code on <a href="https://github.com/azf20/next-functions-and-routes-poc" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600">GitHub</a></p>
         </div>
       </main>
     </div>
