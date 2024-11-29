@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -51,7 +51,7 @@ export default function Home() {
               </td>
               <td className="border p-2">200</td>
               <td className="border p-2">404</td>
-              <td className="border p-2">200 if the slug is '[slug]', or 405</td>
+              <td className="border p-2">200 if the slug is &apos;[slug]&apos;, or 405</td>
             </tr>
           </tbody>
         </table>
@@ -59,10 +59,10 @@ export default function Home() {
         <div className="text-sm text-gray-600 dark:text-gray-400">
           <p>Test the endpoints:</p>
           <ul className="list-disc pl-5 mt-2">
-            <li><a href="/api/time"><code className="bg-gray-100 dark:bg-gray-800 px-1 rounded">/api/time</code></a></li>
-            <li><a href="/api/random"><code className="bg-gray-100 dark:bg-gray-800 px-1 rounded">/api/random</code></a></li>
-            <li><a href="/api/hello/test"><code className="bg-gray-100 dark:bg-gray-800 px-1 rounded">/api/hello/test</code></a></li>
-            <li><a href="/api/hello/[slug]"><code className="bg-gray-100 dark:bg-gray-800 px-1 rounded">/api/hello/[slug]</code></a></li>
+            <li><Link href="/api/time"><code className="bg-gray-100 dark:bg-gray-800 px-1 rounded">/api/time</code></Link></li>
+            <li><Link href="/api/random"><code className="bg-gray-100 dark:bg-gray-800 px-1 rounded">/api/random</code></Link></li>
+            <li><Link href="/api/hello/test"><code className="bg-gray-100 dark:bg-gray-800 px-1 rounded">/api/hello/test</code></Link></li>
+            <li><Link href="/api/hello/[slug]"><code className="bg-gray-100 dark:bg-gray-800 px-1 rounded">/api/hello/[slug]</code></Link></li>
           </ul>
         </div>
       </main>
