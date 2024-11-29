@@ -18,7 +18,7 @@ This project demonstrates different API function behaviors across various Next.j
 |--------------|----------|------------|-----------------|
 | `api/time.js`<br/><sub>Root level Node.js function</sub> | 404 (expected) | 200 | 200 |
 | `app/api/random/route.ts`<br/><sub>App route</sub> | 200 | 404 | 200 |
-| `app/api/hello/[slug]/route.ts`<br/><sub>Dynamic app route</sub> | 200 | 404 | 200 if slug is '[slug]', or 404 |
+| `app/api/hello/[slug]/route.ts`<br/><sub>Dynamic app route</sub> | 200 | 404 | 404, unless slug is "[slug]" |
 
 ### Test Endpoints
 You can test the following endpoints:

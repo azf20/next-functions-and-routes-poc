@@ -51,7 +51,7 @@ export default function Home() {
               </td>
               <td className="border p-2">200</td>
               <td className="border p-2">404</td>
-              <td className="border p-2">200 if the slug is &apos;[slug]&apos;, or 404</td>
+              <td className="border p-2">404, unless slug is &apos;[slug]&apos;</td>
             </tr>
           </tbody>
         </table>
